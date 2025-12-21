@@ -1,0 +1,80 @@
+:root {
+  --bg: #0b0b10;
+  --card: rgba(255,255,255,0.06);
+  --stroke: rgba(255,255,255,0.12);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.70);
+  --accent: #b46bff;
+  --accent2: #00e6a8;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+
+.wrap { width: min(980px, 92vw); margin: 0 auto; }
+
+.hero {
+  padding: 70px 0 50px;
+  background:
+    radial-gradient(900px 500px at 20% 10%, rgba(180,107,255,0.22), transparent 60%),
+    radial-gradient(700px 400px at 80% 30%, rgba(0,230,168,0.18), transparent 60%),
+    linear-gradient(to bottom, rgba(255,255,255,0.03), transparent);
+  border-bottom: 1px solid var(--stroke);
+}
+
+.tag { letter-spacing: 0.14em; font-size: 0.78rem; color: var(--muted); margin: 0 0 12px; }
+h1 { margin: 0; font-size: clamp(2.2rem, 4vw, 3.5rem); }
+.sub { margin: 12px 0 22px; color: var(--muted); font-size: 1.05rem; line-height: 1.55; }
+
+.cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--stroke);
+  color: var(--text);
+  text-decoration: none;
+  background: rgba(255,255,255,0.04);
+}
+.btn.primary {
+  border-color: rgba(180,107,255,0.45);
+  background: linear-gradient(135deg, rgba(180,107,255,0.26), rgba(0,230,168,0.14));
+}
+
+main { padding: 26px 0 44px; display: grid; gap: 18px; }
+
+.card {
+  border: 1px solid var(--stroke);
+  background: var(--card);
+  border-radius: 18px;
+  padding: 18px 18px 14px;
+}
+
+h2 { margin: 0 0 10px; font-size: 1.3rem; }
+p { margin: 0 0 12px; color: var(--muted); line-height: 1.6; }
+
+.grid {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+.grid li {
+  border: 1px solid var(--stroke);
+  border-radius: 16px;
+  padding: 12px;
+  background: rgba(0,0,0,0.18);
+}
+.grid h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.small { font-size: 0.92rem; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+
+.footer {
+  padding: 18px 0 26px;
+  border-top: 1px solid var(--stroke);
+  color: rgba(255,255,255,0.55);
+  font-size: 0.9rem;
+}

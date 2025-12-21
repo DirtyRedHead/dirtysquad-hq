@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dirty Squad HQ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="tag">DIRTY SQUAD • PLANET PHILTHEE</p>
+      <h1>Dirty Squad HQ</h1>
+      <p class="sub">
+        Built from the dirt, aimed at the light. Music, tech, myth — one universe at a time.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="#universe">Enter the Universe</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="universe" class="card">
+      <h2>The Universe</h2>
+      <p>
+        This is the entry point. Lore drops, episodes, characters, and the roadmap live here.
+        Planet Philthee isn’t just a story — it’s a system.
+      </p>
+
+      <ul class="grid">
+        <li>
+          <h3>Planet Philthee</h3>
+          <p>The harmonic world where sound shapes matter and destiny.</p>
+        </li>
+        <li>
+          <h3>Dirty Squad Chronicles</h3>
+          <p>Serialized arcs and canon events, officially logged.</p>
+        </li>
+        <li>
+          <h3>Rayevin Protocol</h3>
+          <p>The creative lens: structure, voice, and build guidance.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>
+        For collabs & serious inquiries (domain email coming later):
+        <span class="mono">dirtyredhead@github</span>
+      </p>
+      <p class="small">
+        For now we build on free infrastructure. Domain comes when we’re ready.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> Dirty Squad HQ • Built from the dirt.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
