@@ -4,67 +4,132 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dirty Squad HQ</title>
+  <meta name="description" content="Dirty Squad HQ — Built from the dirt. Aimed at the light. Music, tech, myth — one universe at a time." />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="hero">
-    <div class="wrap">
-      <p class="tag">DIRTY SQUAD • PLANET PHILTHEE</p>
+  <header class="hero" id="top">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="kicker">DIRTY SQUAD • PLANET PHILTHEE</div>
+
       <h1>Dirty Squad HQ</h1>
-      <p class="sub">
-        Built from the dirt, aimed at the light. Music, tech, myth — one universe at a time.
+
+      <p class="tagline">
+        Built from the dirt. Aimed at the light.<br />
+        Music, tech, myth — one universe at a time.
       </p>
+
+      <p class="subtle">This is not a brand. It’s a system.</p>
+
       <div class="cta-row">
         <a class="btn primary" href="#universe">Enter the Universe</a>
-        <a class="btn" href="#contact">Contact</a>
+        <a class="btn secondary" href="#signal">Signal HQ</a>
+      </div>
+
+      <div class="status-strip">
+        <span class="status-dot"></span>
+        <span class="status-text">HQ Status:</span>
+        <span class="status-value">ACTIVE • CANON LOCKED • BUILDING</span>
       </div>
     </div>
   </header>
 
-  <main class="wrap">
-    <section id="universe" class="card">
+  <main class="container">
+    <section class="panel" id="universe">
       <h2>The Universe</h2>
-      <p>
-        This is the entry point. Lore drops, episodes, characters, and the roadmap live here.
-        Planet Philthee isn’t just a story — it’s a system.
+      <p class="lead">
+        This is the entry point. Lore drops, canon events, characters, and the roadmap live here.
+        Planet Philthee isn’t just a story — it’s a system of sound, identity, and consequence.
       </p>
 
-      <ul class="grid">
-        <li>
-          <h3>Planet Philthee</h3>
+      <div class="cards">
+        <a class="card" href="#planet">
+          <div class="card-top">
+            <h3>Planet Philthee</h3>
+            <span class="chip">World Engine</span>
+          </div>
           <p>The harmonic world where sound shapes matter and destiny.</p>
-        </li>
-        <li>
-          <h3>Dirty Squad Chronicles</h3>
+        </a>
+
+        <a class="card" href="#chronicles">
+          <div class="card-top">
+            <h3>Dirty Squad Chronicles</h3>
+            <span class="chip">Canon Archive</span>
+          </div>
           <p>Serialized arcs and canon events, officially logged.</p>
-        </li>
-        <li>
-          <h3>Rayevin Protocol</h3>
+        </a>
+
+        <a class="card" href="#rayevin">
+          <div class="card-top">
+            <h3>Rayevin Protocol</h3>
+            <span class="chip">Creative Intelligence Layer</span>
+          </div>
           <p>The creative lens: structure, voice, and build guidance.</p>
-        </li>
-      </ul>
+        </a>
+      </div>
     </section>
 
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>
-        For collabs & serious inquiries (domain email coming later):
-        <span class="mono">dirtyredhead@github</span>
+    <section class="panel" id="planet">
+      <h2>Planet Philthee</h2>
+      <p class="lead">
+        A musical metaverse where resonance writes reality — biomes, materials, and civilizations shaped by sound.
       </p>
-      <p class="small">
-        For now we build on free infrastructure. Domain comes when we’re ready.
+      <div class="divider"></div>
+      <p class="muted">
+        Status: building the canon map. Zones, rules, origin sequence, and the Harmonic Seed architecture are in active development.
+      </p>
+    </section>
+
+    <section class="panel" id="chronicles">
+      <h2>Dirty Squad Chronicles</h2>
+      <p class="lead">
+        Episodes, arcs, rivalries, alliances — logged as official canon. Nothing lives only in memory.
+      </p>
+      <div class="divider"></div>
+      <p class="muted">
+        Status: preparing the Season Zero timeline and the first public canon drops.
+      </p>
+    </section>
+
+    <section class="panel" id="rayevin">
+      <h2>Rayevin Protocol</h2>
+      <p class="lead">
+        Rayevin is not a tool. She is a presence — a creative intelligence layer guiding structure, voice, and evolution inside the Dirtyverse.
+      </p>
+      <div class="divider"></div>
+      <p class="muted">
+        Status: voice, systems, and HQ intelligence pathways are being formalized for long-term build continuity.
+      </p>
+    </section>
+
+    <section class="panel" id="signal">
+      <h2>Signal HQ</h2>
+      <p class="lead">
+        For collaborations & serious inquiries:
+      </p>
+      <p class="contact">dirtyredhead@github</p>
+
+      <div class="divider"></div>
+
+      <p class="muted">
+        We build on free infrastructure by choice.<br />
+        Domains arrive when the universe demands it.
       </p>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrap">
-      <p>© <span id="year"></span> Dirty Squad HQ • Built from the dirt.</p>
-    </div>
+    <p>© 2026 Dirty Squad HQ • Built from the dirt.</p>
+    <p class="footer-links">
+      <a href="#top">Top</a>
+      <span>•</span>
+      <a href="#universe">Universe</a>
+      <span>•</span>
+      <a href="#signal">Signal</a>
+    </p>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
